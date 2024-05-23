@@ -12,7 +12,7 @@ function App() {
       <div className="mainContent">
         <NavBar />
       </div>
-
+      <Outlet />
       <div className="map">
         <img
           src="https://www.worldatlas.com/r/w960-q80/upload/a8/1b/ff/nz-01.png"
