@@ -1,16 +1,16 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 
-const WeatherWidget = () => {
+function WeatherWidget(City: string) {
   useEffect(() => {
     // Configuration for the weather widget
     window.weatherWidgetConfig = window.weatherWidgetConfig || []
     window.weatherWidgetConfig.push({
       selector: '.weatherWidget',
-      apiKey: '5Y72TBMZS9CJVW3EZWDLY9RZS', // Sign up for your personal key
-      location: 'Christchurch, New Zealand', // Enter an address
-      unitGroup: 'metric', // "us" or "metric"
+      apiKey: '5Y72TBMZS9CJVW3EZWDLY9RZS',
+      location: City, // Enter an address and useState--------------
+      unitGroup: 'metric',
       forecastDays: 5, // how many days forecast to show
-      title: 'Christchurch, New Zealand', // Optional title to show
+      title: City, // Optional title to show
       showTitle: true,
       showConditions: true,
     })
@@ -29,7 +29,7 @@ const WeatherWidget = () => {
         (config) => config.selector !== '.weatherWidget',
       )
     }
-  }, [])
+  }, [City])
 
   return <div className="weatherWidget"></div>
 }
