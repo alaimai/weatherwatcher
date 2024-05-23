@@ -1,7 +1,8 @@
+
 function Header() {
   return (
     <header>
-      <h1>Weather Watch</h1>
+      <h1>New Zealand Weather Watch</h1>
 
     </header>
   )

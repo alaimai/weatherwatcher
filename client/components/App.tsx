@@ -1,27 +1,29 @@
-import Wellington from './Wellington.tsx'
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Header from './Header.tsx'
 import Footer from './Footer.tsx'
+import NavBar from './Nav.tsx'
+import Wellington from './Wellington.tsx'
+
 
 function App() {
   return (
-    <div className='headerBlock'>
+    <Router>
+    <div className='app'>
       <Header />
-   
       <p>Click on different cities for the local temperature and brief info</p>
-      <nav>
-        <ul>
-          <li><Link to="/Auckland">Auckland</Link></li>
-          <li><Link to="/Wellington">Wellington</Link></li>
-          <li><Link to="/Christchurch">Christchurch</Link></li>
-          <li><Link to="/Invercargill">Invercargill</Link></li>
-        </ul>
-      </nav>
-
-      <div className='map'>
-        <img src="https://www.worldatlas.com/r/w960-q80/upload/a8/1b/ff/nz-01.png"></img>
+      
+      <div className="mainContent">
+        <NavBar />
       </div>
+      <div className='map'>
+        <img src="https://www.worldatlas.com/r/w960-q80/upload/a8/1b/ff/nz-01.png" alt="New Zealand map" />
+      </div>
+      <Routes>
+        <Route path="/Wellington" element={<Wellington />} />
+      </Routes>
       <Footer />
     </div>
+    </Router>
   )
 }
 
