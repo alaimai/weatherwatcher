@@ -5,7 +5,7 @@ import WeatherWidget from './WeathWidget'
 function Christchurch() {
   const [selectedCity, setSelectedCity] = useState('')
   const [City, setCity] = useState('Invercargill, New Zealand') //"" = nav clicked :id
-  WeatherWidget(City)
+
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedCity(event.target.value)
   }
@@ -21,7 +21,7 @@ function Christchurch() {
 
   return (
     <>
-      <div className="weatherWidget"></div>
+      <div className="weatherWidget">WeatherWidget(City)</div>
       <form onSubmit={handleSubmit}>
         <label htmlFor="cities">Select a City:</label>
         <select

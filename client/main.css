@@ -3,3 +3,97 @@ body {
   color: #0a1520;
   font-family: 'Poppins', sans-serif;
 }
+
+.app {
+  text-align: center;
+}
+
+header,
+footer {
+  background-color: #282c34;
+  color: white;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+.mainContent {
+  padding: 2rem;
+}
+
+.map {
+  margin-top: 2rem;
+}
+
+button {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.nz-map {
+  width: 300px;
+}
+
+/* AUCKLAND COMPONENT CSS */
+
+.aucklandHeader {
+  background-color: #ececee;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 10px 60px 10px 60px;
+}
+
+.aucklandMainTitle {
+  font-size: 40px;
+  background-color: #7475cf;
+  color: #ececee;
+  margin: 0px 120px 0px 120px;
+  border-radius: 35px;
+}
+
+.aucklandSeasonContainer {
+  background-color: #ececee;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 10px 60px 10px 60px;
+}
+
+.aukImgContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.aukSummerImg {
+  width: 20%;
+  margin: 10px;
+}
+
+.aukAutumnImg {
+  width: 20%;
+  margin: 10px;
+}
+
+.aukWinterImg {
+  width: 20%;
+  margin: 10px;
+}
+.aukSpringImg {
+  width: 20%;
+  margin: 10px;
+}
+
+.aukSummerImg:hover,
+.aukAutumnImg:hover,
+.aukWinterImg:hover,
+.aukSpringImg:hover {
+  opacity: 40%;
+}

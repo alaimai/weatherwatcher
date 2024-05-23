@@ -1,7 +1,10 @@
 function Home() {
   return (
-    <div>
-      <img src="" alt="new zealand map" />
+    <div className="map">
+      <img
+        src="https://www.worldatlas.com/r/w960-q80/upload/a8/1b/ff/nz-01.png"
+        alt="New Zealand map"
+      />
     </div>
   )
 }
