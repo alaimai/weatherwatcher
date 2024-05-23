@@ -5,7 +5,7 @@ import WeatherWidget from './WeathWidget'
 function Christchurch() {
   const [selectedCity, setSelectedCity] = useState('')
   const [City, setCity] = useState('Invercargill, New Zealand') //"" = nav clicked :id
-  
+
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedCity(event.target.value)
   }
