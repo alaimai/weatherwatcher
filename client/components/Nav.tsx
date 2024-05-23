@@ -1,27 +1,17 @@
 import { Link } from 'react-router-dom'
-function Nav() {
+
+function NavBar() {
   return (
-    <>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/home">Home</Link>
-          </li>
-          <li>
-            <Link to="/auckland">Auckland</Link>
-          </li>
-          <li>
-            <Link to="/wellington">Wellington</Link>
-          </li>
-          <li>
-            <Link to="/christchurch">Christchurch</Link>
-          </li>
-          <li>
-            <Link to="/invercargill">Invercargill</Link>
-          </li>
-        </ul>
-      </nav>
-    </>
+    <nav>
+      <ul>
+        <li><Link to="/Auckland">Auckland</Link></li>
+        <li><Link to="/Wellington">Wellington</Link></li>
+        <li><Link to="/Christchurch">Christchurch</Link></li>
+        <li><Link to="/Invercargill">Invercargill</Link></li>
+      </ul>
+    </nav>
   )
 }
-export default Nav
+
+export default NavBar
+
