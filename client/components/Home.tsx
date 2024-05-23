@@ -1,9 +1,6 @@
 function Home() {
   return (
-    <div className="homeimage">
-      <p>
-        descriotion of how the app works...or anything we would like to present
-      </p>
+    <div>
       <img src="" alt="new zealand map" />
     </div>
   )

@@ -3,7 +3,3 @@ body {
   color: #0a1520;
   font-family: 'Poppins', sans-serif;
 }
-.container {
-  display: flex;
-  flex-direction: row;
-}
