@@ -15,6 +15,29 @@ function Auckland() {
       </div>
       <div className="aucklandSeasonContainer">
         <h2>Seasonal Weather Breakdown</h2>
+        <p>Click on a season for more information.</p>
+        <div className="aukImgContainer">
+          <img
+            className="aukSummerImg"
+            src="/images/auk-summer.jpg"
+            alt="gannets at Muriwai"
+          />
+          <img
+            className="aukAutumnImg"
+            src="/images/auk-autumn.jpg"
+            alt="auckland cbd in autumn"
+          />
+          <img
+            className="aukWinterImg"
+            src="/images/auk-winter.jpg"
+            alt="Victoria Park, Auckland in winter"
+          />
+          <img
+            className="aukSpringImg"
+            src="/images/auk-spring.jpg"
+            alt="auckland in spring"
+          />
+        </div>
       </div>
     </>
   )

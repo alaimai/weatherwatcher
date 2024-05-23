@@ -54,7 +54,8 @@ button {
 
 .aucklandMainTitle {
   font-size: 40px;
-  background-color: #92c18c;
+  background-color: #7475cf;
+  color: #ececee;
   margin: 0px 120px 0px 120px;
   border-radius: 35px;
 }
@@ -64,4 +65,35 @@ button {
   border-radius: 20px;
   padding: 30px;
   margin: 10px 60px 10px 60px;
+}
+
+.aukImgContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.aukSummerImg {
+  width: 20%;
+  margin: 10px;
+}
+
+.aukAutumnImg {
+  width: 20%;
+  margin: 10px;
+}
+
+.aukWinterImg {
+  width: 20%;
+  margin: 10px;
+}
+.aukSpringImg {
+  width: 20%;
+  margin: 10px;
+}
+
+.aukSummerImg:hover,
+.aukAutumnImg:hover,
+.aukWinterImg:hover,
+.aukSpringImg:hover {
+  opacity: 40%;
 }
