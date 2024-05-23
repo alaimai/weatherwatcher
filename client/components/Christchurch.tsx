@@ -4,7 +4,7 @@ import WeatherWidget from './WeathWidget'
 
 function Christchurch() {
   const [selectedCity, setSelectedCity] = useState('')
-  const [City, setCity] = useState('Invercargill, New Zealand')
+  const [City, setCity] = useState('Christchurch, New Zealand')
 
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedCity(event.target.value)
@@ -21,7 +21,8 @@ function Christchurch() {
   }
 
   return (
-    <div>
+    <div className="chchContainer">
+      <h1>Christchurch Today</h1>
       <div>{WeatherWidget(City)}</div>
       <img
         className="chchimage"
@@ -29,12 +30,13 @@ function Christchurch() {
         alt="christchurch"
       />
       <form onSubmit={handleSubmit}>
-        <label htmlFor="cities">Select a City:</label>
+        <label htmlFor="cities">Select a City: </label>
         <select
           name="city"
           id="city"
           onChange={handleChange}
           value={selectedCity}
+          className="customSelect"
         >
           <option value="">--Please choose a city--</option>
           {citiesData.map((city) => (

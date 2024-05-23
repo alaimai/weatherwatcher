@@ -103,3 +103,10 @@ button {
   width: 93vw;
   border-radius: 5px;
 }
+.customSelect {
+  font-size: 1em;
+  height: 2em;
+}
+.chchContainer {
+  font-weight: 300;
+}
