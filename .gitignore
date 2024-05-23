@@ -3,3 +3,10 @@ static
 npm-debug.log
 bundle.*
 /dist
+.DS_Store
+router.tsx
+main.css
+Nav.tsx
+Home.tsx
+App.tsx
+index.tsx
