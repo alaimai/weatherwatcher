@@ -23,7 +23,11 @@ function Christchurch() {
   return (
     <div>
       <div>{WeatherWidget(City)}</div>
-      <img src="/images/christchurch-1.jpg" alt="christchurch" />
+      <img
+        className="chchimage"
+        src="/images/christchurch-1.jpg"
+        alt="christchurch"
+      />
       <form onSubmit={handleSubmit}>
         <label htmlFor="cities">Select a City:</label>
         <select
