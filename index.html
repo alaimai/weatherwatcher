@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>React!</title>
+    <title>Weather Watch</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
@@ -11,6 +11,29 @@
   </head>
   <body>
     <div id="app"></div>
+    <div class="weatherWidget"></div>
+
+    <script>
+      window.weatherWidgetConfig = window.weatherWidgetConfig || []
+      window.weatherWidgetConfig.push({
+        selector: '.weatherWidget',
+        apiKey: '5Y72TBMZS9CJVW3EZWDLY9RZS', //Sign up for your personal key
+        location: 'Christchurch, New Zealand', //Enter an address
+        unitGroup: 'metric', //"us" or "metric"
+        forecastDays: 5, //how many days forecast to show
+        title: 'Christchurch, New Zealand', //optional title to show in the
+        showTitle: true,
+        showConditions: true,
+      })
+      ;(function () {
+        var d = document,
+          s = d.createElement('script')
+        s.src =
+          'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js'
+        s.setAttribute('data-timestamp', +new Date())
+        ;(d.head || d.body).appendChild(s)
+      })()
+    </script>
 
     <script src="./client/index.tsx" type="module"></script>
   </body>

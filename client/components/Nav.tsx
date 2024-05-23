@@ -4,7 +4,6 @@ function NavBar() {
   return (
     <nav>
       <ul>
-        <li><Link to="/home">Home</Link></li>
         <li><Link to="/Auckland">Auckland</Link></li>
         <li><Link to="/Wellington">Wellington</Link></li>
         <li><Link to="/Christchurch">Christchurch</Link></li>
@@ -15,3 +14,4 @@ function NavBar() {
 }
 
 export default NavBar
+
