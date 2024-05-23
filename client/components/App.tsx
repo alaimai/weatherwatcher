@@ -1,5 +1,7 @@
 import { Outlet } from 'react-router-dom'
 import Nav from './Nav'
+import WeatherWidget from './WeatherWidget'
+import Christchurch from './Christchurch'
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
       </div>
       <div className="container">
         <Nav />
+
         <Outlet />
       </div>
     </>
