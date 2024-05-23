@@ -1,9 +1,19 @@
+import { Outlet } from 'react-router-dom'
+import Nav from './Nav'
+
 function App() {
   return (
-    <div>
-      <h1>App</h1>
-      <p>React development has begun!</p>
-    </div>
+    <>
+      <div className="heading">
+        <img src="/" alt="app icon" />
+        <h1>Weather Watch</h1>
+        <p>discribe the app function</p>
+      </div>
+      <div className="container">
+        <Nav />
+        <Outlet />
+      </div>
+    </>
   )
 }
 
