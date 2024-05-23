@@ -30,6 +30,7 @@ function Auckland() {
             className="aukSummerImg"
             src="/images/auk-summer.jpg"
             alt="gannets at Muriwai"
+            onClick={handleClick}
           />
           <img
             className="aukAutumnImg"
