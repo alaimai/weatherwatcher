@@ -4,12 +4,12 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-
 .app {
   text-align: center;
 }
 
-header, footer {
+header,
+footer {
   background-color: #282c34;
   color: white;
   padding: 1rem;
@@ -41,4 +41,18 @@ button {
 
 .nz-map {
   width: 300px;
+}
+
+/* AUCKLAND COMPONENT CSS */
+
+.aucklandHeader {
+  background-color: #ececee;
+  border-radius: 20px;
+  padding: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.aucklandMainTitle {
+  font-size: 40px;
 }
