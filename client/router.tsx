@@ -18,7 +18,7 @@ const router = createBrowserRouter(
       <Route path="/Auckland" element={<Auckland />} />
       <Route path="/Wellington" element={<Wellington />} />
       <Route path="/Christchurch" element={<Christchurch />} />
-      <Route path="/Invercargill" element={<Invercargill />} />
+      {/* <Route path="/Invercargill" element={<Invercargill />} /> */}
     </Route>,
   ),
 )
