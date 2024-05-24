@@ -4,18 +4,18 @@ interface MonthlyTemperature {
 }
 
 const invercargillAverages: MonthlyTemperature[] = [
-  { month: 'jan', averageTemperature: 14.2 },
-  { month: 'feb', averageTemperature: 14.0 },
-  { month: 'mar', averageTemperature: 12.9 },
-  { month: 'apr', averageTemperature: 10.7 },
-  { month: 'may', averageTemperature: 8.6 },
-  { month: 'jun', averageTemperature: 6.3 },
-  { month: 'jul', averageTemperature: 5.7 },
-  { month: 'aug', averageTemperature: 6.6 },
-  { month: 'sep', averageTemperature: 8.4 },
-  { month: 'oct', averageTemperature: 9.7 },
-  { month: 'nov', averageTemperature: 11.1 },
-  { month: 'dec', averageTemperature: 13.2 },
+  { month: 'January', averageTemperature: 14.2 },
+  { month: 'February', averageTemperature: 14.0 },
+  { month: 'March', averageTemperature: 12.9 },
+  { month: 'April', averageTemperature: 10.7 },
+  { month: 'May', averageTemperature: 8.6 },
+  { month: 'June', averageTemperature: 6.3 },
+  { month: 'July', averageTemperature: 5.7 },
+  { month: 'August', averageTemperature: 6.6 },
+  { month: 'September', averageTemperature: 8.4 },
+  { month: 'October', averageTemperature: 9.7 },
+  { month: 'November', averageTemperature: 11.1 },
+  { month: 'December', averageTemperature: 13.2 },
 ]
 
 export default invercargillAverages

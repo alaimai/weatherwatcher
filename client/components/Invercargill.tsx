@@ -15,15 +15,20 @@ function Invercargill() {
 
   return (
     <div>
-      <h2>Invercargill Weather</h2>
+      <h2>Invercargill/Waihōpai Weather</h2>
+
       <div className="invercargillLiveCam">
         <h3>Live Weather Camera</h3>
-        <iframe
-          src="https://live.harvest.com/?cmd=cwc&sid=8917"
-          title="Invercargill Live Weather Camera"
-          className="liveWeatherCam"
-          allowFullScreen
-        ></iframe>
+        <div className="invCamBox">
+          <iframe
+            width={500}
+            height={238}
+            src="https://live.harvest.com/?cmd=cwc&sid=8917"
+            title="Invercargill Live Weather Camera"
+            className="liveWeatherCam"
+            allowFullScreen
+          ></iframe>
+        </div>
       </div>
       <div className="invercargillInfo">
         <h3>Average Monthly Temperatures</h3>
@@ -41,16 +46,58 @@ function Invercargill() {
             <p>Average Temperature: {selectedMonthData.averageTemperature}°C</p>
           </div>
         )}
+        <div className="johnsWeatherReport">
+          <h3>Live Weather from John M.</h3>
+          <p>
+            According to my Uncle John, Friday 24 May has been pleasant with
+            some incoming cloud on the horizon. Considering the temperature in
+            Invercargill has hovered around 4-6°C today, this shows the positive
+            and hardy attitude of the people of Southland. There have been
+            multiple frosts already and it is now Rugby season.
+          </p>
+        </div>
         <h3>Images</h3>
         <div className="invercargillImageContainer">
-          <img
-            src="/public/images/invercargill-1.jpg"
-            alt="Sunset behind the Invercargill water tower"
-          />
-          <img
-            src="/public/images/inv-basilica.jpg"
-            alt="Snow surrounding St Paul's basilica in 2009"
-          />
+          <figure className="maraeImage">
+            <img
+              className="waihopai-marae"
+              src="/public/images/waihopai-marae.jpg"
+              alt="marae in waihōpai"
+            />
+            <figcaption>
+              Murihiku Marae in Waihōpai/Invercargill. The name Murihiku was
+              given to the Southland region, and means the last joint of the
+              tail. Early Māori of the Waitaha iwi were based on the coast.
+              Later iwi to come to the region were Ngāti Māmoe and Kāi Tahu,
+              from further north. Sealers and whalers arrived in the 1790s and
+              from the 1850s immigrants from Britain.
+            </figcaption>
+          </figure>
+          <figure className="towerImage">
+            <img
+              className="inv-water-tower"
+              src="/public/images/invercargill-1.jpg"
+              alt="Sunset behind the Invercargill water tower"
+            />
+            <figcaption>
+              Sunset behind the Invercargill Water Tower, built in the late
+              1880s. It was once open to the public, but closed in 2012 due to
+              earthquake safety risks.
+            </figcaption>
+          </figure>
+          <figure className="basilicaImage">
+            <img
+              className="inv-basilica"
+              src="/public/images/inv-basilica.jpg"
+              alt="Snow surrounding St Mary's basilica in 2009"
+            />
+            <figcaption>
+              Basilica of St Mary in the snow in 2009. This Gothic Revival style
+              church was designed by celebrated architect Francis Petre, and
+              opened in 1905. It is of Catholic denomination and is part of the
+              Diocese of Dunedin.
+            </figcaption>
+          </figure>
         </div>
       </div>
     </div>

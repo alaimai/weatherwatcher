@@ -97,3 +97,11 @@ button {
 .aukSpringImg:hover {
   opacity: 40%;
 }
+
+/* invercargill component CSS */
+
+.johnsWeatherReport {
+  margin-top: 2rem;
+  border: 1px solid #ddd;
+  padding: 1rem;
+}
