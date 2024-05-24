@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import invercargillAverages from '../data/invercargillAverages.ts'
 
 function Invercargill() {
