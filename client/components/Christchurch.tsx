@@ -4,11 +4,12 @@ import WeatherWidget from './WeathWidget'
 
 function Christchurch() {
   const [selectedCity, setSelectedCity] = useState('')
-  const [City, setCity] = useState('Invercargill, New Zealand') //"" = nav clicked :id
+  const [City, setCity] = useState('Christchurch, New Zealand')
 
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedCity(event.target.value)
   }
+
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     if (selectedCity === '') {
@@ -20,29 +21,34 @@ function Christchurch() {
   }
 
   return (
-    <>
-      <div className="weatherWidget">WeatherWidget(City)</div>
+    <div className="chchContainer">
+      <h1>Christchurch Today</h1>
+      <div>{WeatherWidget(City)}</div>
+      <img
+        className="chchimage"
+        src="/images/christchurch-1.jpg"
+        alt="christchurch"
+      />
       <form onSubmit={handleSubmit}>
-        <label htmlFor="cities">Select a City:</label>
+        <label htmlFor="cities">Select a City: </label>
         <select
           name="city"
           id="city"
           onChange={handleChange}
           value={selectedCity}
+          className="customSelect"
         >
           <option value="">--Please choose a city--</option>
-          {citiesData.map((city) => {
-            console.log(`${city.name}, ${city.country}`)
-            return (
-              <option key={city.name} value={`${city.name}, ${city.country}`}>
-                {`${city.name}, ${city.country}`}
-              </option>
-            )
-          })}
+          {citiesData.map((city) => (
+            <option key={city.name} value={`${city.name}, ${city.country}`}>
+              {`${city.name}, ${city.country}`}
+            </option>
+          ))}
         </select>
         <button>Check weather</button>
       </form>
-    </>
+    </div>
   )
 }
+
 export default Christchurch

@@ -97,6 +97,22 @@ button {
 .aukSpringImg:hover {
   opacity: 40%;
 }
+<<<<<<< HEAD
+/*christchurch CSS*/
+.chchimage {
+  margin-top: 2em;
+  width: 93vw;
+  border-radius: 5px;
+}
+.customSelect {
+  font-size: 1em;
+  height: 2em;
+}
+.chchContainer {
+  font-weight: 300;
+}
+||||||| 8d1574c
+=======
 
 /* invercargill component CSS */
 
@@ -105,3 +121,4 @@ button {
   border: 1px solid #ddd;
   padding: 1rem;
 }
+>>>>>>> main
