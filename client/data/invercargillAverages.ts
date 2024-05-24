@@ -3,7 +3,7 @@ interface MonthlyTemperature {
   averageTemperature: number
 }
 
-const monthlyAverages: MonthlyTemperature[] = [
+const invercargillAverages: MonthlyTemperature[] = [
   { month: 'jan', averageTemperature: 14.2 },
   { month: 'feb', averageTemperature: 14.0 },
   { month: 'mar', averageTemperature: 12.9 },
@@ -18,4 +18,4 @@ const monthlyAverages: MonthlyTemperature[] = [
   { month: 'dec', averageTemperature: 13.2 },
 ]
 
-export default monthlyAverages
+export default invercargillAverages
