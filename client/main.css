@@ -33,14 +33,23 @@ nav li {
   margin-top: 2rem;
 }
 
+@media screen and (min-width: 980px) {
+  .map {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 979px) {
+  .map {
+    width: 100%;
+  }
+}
+
 button {
   margin: 1rem;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-}
-
-.nz-map {
-  width: 300px;
 }
 
 /* AUCKLAND COMPONENT CSS */
@@ -183,14 +192,56 @@ button {
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-  .WellyImage-container img {
-      max-width: 45%;
+@media screen and (min-width: 980px) {
+  .images-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .image-text-pair {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  .waihopai-marae,
+  .inv-water-tower,
+  .inv-basilica {
+    width: 40%;
+    object-fit: cover;
+  }
+
+  .marae-image-text,
+  .tower-image-text,
+  .basilica-image-text {
+    padding: 3rem;
+    border: none;
+    width: 50%;
   }
 }
 
-@media (max-width: 480px) {
-  .WellyImage-container img {
-      max-width: 90%;
+@media screen and (max-width: 979px) {
+  .images-section {
+    display: block;
+  }
+
+  .image-text-pair {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .waihopai-marae,
+  .inv-water-tower,
+  .inv-basilica {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .marae-image-text,
+  .tower-image-text,
+  .basilica-image-text {
+    padding: 3rem;
+    border: none;
+    width: 100%;
   }
 }
