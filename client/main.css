@@ -98,6 +98,31 @@ button {
   opacity: 40%;
 }
 <<<<<<< HEAD
+
+.subscriptionContainer {
+  background-color: #ececee;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 10px 60px 10px 60px;
+}
+
+.aucklandInput {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.aucklandSubmit {
+  border-radius: 20%;
+}
+
+=======
+>>>>>>> main
 /*christchurch CSS*/
 .chchimage {
   margin-top: 2em;
@@ -111,8 +136,6 @@ button {
 .chchContainer {
   font-weight: 300;
 }
-||||||| 8d1574c
-=======
 
 /* invercargill component CSS */
 
@@ -121,4 +144,3 @@ button {
   border: 1px solid #ddd;
   padding: 1rem;
 }
->>>>>>> main
