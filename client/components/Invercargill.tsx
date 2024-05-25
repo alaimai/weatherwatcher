@@ -13,17 +13,17 @@ function Invercargill() {
     ? invercargillAverages.find((month) => month.month === selectedMonth)
     : null
 
-  const johnText = `"According to my Uncle John, Friday 24 May has been pleasant with
+  const johnText = `According to my Uncle John, Friday 24 May has been pleasant with
     some incoming cloud on the horizon. Considering the temperature in
     Invercargill has hovered around 4-6°C today, this shows the positive
     and hardy attitude of the people of Southland. There have been
-    multiple frosts already and it is now Rugby season."`
-  const maraeMessage = `"Murihiku Marae in Waihōpai/Invercargill. The name Murihiku was given to the Southland region, and means "the last joint of the tail". Early Māori of the Waitaha iwi were based on the coast. Later iwi to come to the region were Ngāti Māmoe and Kāi Tahu, from further north. Sealers and whalers arrived in the 1790s and from the 1850s immigrants from Britain."`
-  const towerMessage = `"Sunset behind the Invercargill Water Tower, built in the late 1880s. It was once open to the public, but closed in 2012 due to earthquake safety risks."`
-  const basilicaMessage = `"Basilica of St Mary in the snow in 2009. This Gothic Revival style
+    multiple frosts already and it is now Rugby season.`
+  const maraeMessage = `Murihiku Marae in Waihōpai/Invercargill. The name Murihiku was given to the Southland region, and means "the last joint of the tail". Early Māori of the Waitaha iwi were based on the coast. Later iwi to come to the region were Ngāti Māmoe and Kāi Tahu, from further north. Sealers and whalers arrived in the 1790s and from the 1850s immigrants from Europe.`
+  const towerMessage = `Sunset behind the Invercargill Water Tower, built in the late 1880s. It was once open to the public, but closed in 2012 due to earthquake safety risks.`
+  const basilicaMessage = `Basilica of St Mary in the snow in 2009. This Gothic Revival style
     church was designed by celebrated architect Francis Petre, and
     opened in 1905. It is of Catholic denomination and is part of the
-    Diocese of Dunedin."`
+    Diocese of Dunedin.`
   return (
     <div>
       <h2>Invercargill/Waihōpai Weather</h2>
@@ -92,7 +92,7 @@ function Invercargill() {
               alt="Snow surrounding St Mary's basilica in 2009"
             />
             <div className="basilica-image-text">
-              <h3>Catholic Basilica in Snow</h3>
+              <h3>Catholic Basilica</h3>
               <p>{basilicaMessage}</p>
             </div>
           </div>
