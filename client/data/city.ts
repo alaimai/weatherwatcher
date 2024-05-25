@@ -1,17 +1,4 @@
 const citiesData = [
-  // Major cities from Australia
-  { name: 'Sydney', country: 'Australia' },
-  { name: 'Melbourne', country: 'Australia' },
-  { name: 'Brisbane', country: 'Australia' },
-  { name: 'Perth', country: 'Australia' },
-  { name: 'Adelaide', country: 'Australia' },
-  { name: 'Gold Coast', country: 'Australia' },
-  { name: 'Newcastle', country: 'Australia' },
-  { name: 'Canberra', country: 'Australia' },
-  { name: 'Sunshine Coast', country: 'Australia' },
-  { name: 'Wollongong', country: 'Australia' },
-  { name: 'Geelong', country: 'Australia' },
-  { name: 'Hobart', country: 'Australia' },
   // Major cities from New Zealand
   { name: 'Auckland', country: 'New Zealand' },
   { name: 'Wellington', country: 'New Zealand' },
@@ -27,5 +14,18 @@ const citiesData = [
   { name: 'Whangarei', country: 'New Zealand' },
   { name: 'Invercargill', country: 'New Zealand' },
   { name: 'Wanganui', country: 'New Zealand' },
+  // Major cities from Australia
+  { name: 'Sydney', country: 'Australia' },
+  { name: 'Melbourne', country: 'Australia' },
+  { name: 'Brisbane', country: 'Australia' },
+  { name: 'Perth', country: 'Australia' },
+  { name: 'Adelaide', country: 'Australia' },
+  { name: 'Gold Coast', country: 'Australia' },
+  { name: 'Newcastle', country: 'Australia' },
+  { name: 'Canberra', country: 'Australia' },
+  { name: 'Sunshine Coast', country: 'Australia' },
+  { name: 'Wollongong', country: 'Australia' },
+  { name: 'Geelong', country: 'Australia' },
+  { name: 'Hobart', country: 'Australia' },
 ]
 export default citiesData

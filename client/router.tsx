@@ -14,7 +14,7 @@ import Invercargill from './components/Invercargill.tsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-      <Route index element={<Home />} />
+      <Route path="index" element={<Home />} />
       <Route path="/Auckland" element={<Auckland />} />
       <Route path="/Wellington" element={<Wellington />} />
       <Route path="/Christchurch" element={<Christchurch />} />
