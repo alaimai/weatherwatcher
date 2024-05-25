@@ -8,7 +8,7 @@ interface AucklandSeasons {
   [season: string]: SeasonDetails
 }
 
-const aucklandSeasons = {
+const aucklandSeasons: AucklandSeasons = {
   Summer: {
     id: 123,
     duration: 'December to February',
