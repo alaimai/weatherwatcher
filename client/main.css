@@ -141,3 +141,57 @@ button {
   border: 1px solid #ddd;
   padding: 1rem;
 }
+
+@media screen and (min-width: 980px) {
+  .invercargill-image-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .image-text-container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+  }
+
+  .waihopai-marae,
+  .inv-water-tower,
+  .inv-basilica {
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .marae-image-text,
+  .tower-image-text,
+  .basilica-image-text {
+    padding: 1rem;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 979px) {
+  .invercargill-image-container {
+    display: block;
+  }
+
+  .image-text-container {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .waihopai-marae,
+  .inv-water-tower,
+  .inv-basilica {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .marae-image-text,
+  .tower-image-text,
+  .basilica-image-text {
+    padding: 1rem;
+    border: none;
+    margin-bottom: 1rem;
+  }
+}
