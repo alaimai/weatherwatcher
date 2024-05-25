@@ -61,7 +61,7 @@ function Invercargill() {
           <figure className="maraeImage">
             <img
               className="waihopai-marae"
-              src="/public/images/waihopai-marae.jpg"
+              src="/images/waihopai-marae.jpg"
               alt="marae in waihōpai"
             />
             <figcaption>
@@ -76,7 +76,7 @@ function Invercargill() {
           <figure className="towerImage">
             <img
               className="inv-water-tower"
-              src="/public/images/invercargill-1.jpg"
+              src="/images/invercargill-1.jpg"
               alt="Sunset behind the Invercargill water tower"
             />
             <figcaption>
@@ -88,7 +88,7 @@ function Invercargill() {
           <figure className="basilicaImage">
             <img
               className="inv-basilica"
-              src="/public/images/inv-basilica.jpg"
+              src="/images/inv-basilica.jpg"
               alt="Snow surrounding St Mary's basilica in 2009"
             />
             <figcaption>
