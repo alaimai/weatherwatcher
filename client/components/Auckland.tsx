@@ -2,6 +2,7 @@ import { useState } from 'react'
 import aucklandSeasons from '../data/aucklandSeasons.ts'
 
 function Auckland() {
+  // handleClick of a season
   const [selectedSeason, setSelectedSeason] = useState<string | null>(null)
 
   function handleClick(season: string) {
@@ -74,6 +75,9 @@ function Auckland() {
             </p>
           </div>
         )}
+      </div>
+      <div className="SubscriptionContainer">
+        <h2>Subscribe To Our Weather Updates!</h2>
       </div>
     </>
   )
