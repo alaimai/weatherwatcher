@@ -2,12 +2,6 @@ import { useState } from 'react'
 import aucklandSeasons from '../data/aucklandSeasons.ts'
 
 function Auckland() {
-  const [visibleInfo, setVisibleInfo] = useState(false)
-
-  function handleClick() {
-    setVisibleInfo(!visibleInfo)
-  }
-
   return (
     <>
       <div className="aucklandHeader">
@@ -30,25 +24,25 @@ function Auckland() {
             className="aukSummerImg"
             src="/images/auk-summer.jpg"
             alt="gannets at Muriwai"
-            onClick={handleClick}
+            onClick={() => handleClick('Summer')}
           />
           <img
             className="aukAutumnImg"
             src="/images/auk-autumn.jpg"
             alt="auckland cbd in autumn"
-            onClick={handleClick}
+            onClick={() => handleClick('Winter')}
           />
           <img
             className="aukWinterImg"
             src="/images/auk-winter.jpg"
             alt="Victoria Park, Auckland in winter"
-            onClick={handleClick}
+            onClick={() => handleClick('Winter')}
           />
           <img
             className="aukSpringImg"
             src="/images/auk-spring.jpg"
             alt="auckland in spring"
-            onClick={handleClick}
+            onClick={() => handleClick('Spring')}
           />
         </div>
       </div>

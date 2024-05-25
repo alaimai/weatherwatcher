@@ -1,3 +1,13 @@
+interface SeasonDetails {
+  id: number
+  duration: string
+  temperature: string
+  conditions: string
+}
+interface AucklandSeasons {
+  [season: string]: SeasonDetails
+}
+
 const aucklandSeasons = {
   Summer: {
     id: 123,
